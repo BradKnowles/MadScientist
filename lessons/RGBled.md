@@ -90,10 +90,13 @@ from machine import Pin, PWM
 from time import sleep
 
 red = PWM(Pin(22))
+red.freq(1000)
 
 green = PWM(Pin(21))
+green.freq(1000)
 
 blue = PWM(Pin(20))
+blue.freq(1000)
 
 # Function to turn completely off
 def off():
